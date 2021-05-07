@@ -5,10 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    </script src="app.js">
+    <script src="js/app.js"></script>
     <title>Endangered Animal Tracker</title>
 </head>
 <body>
+    <h1> Enter Animal details:</h1>
+    <form  id="new-form">
+        <label for="name" ><h4>Name:</h4></label>
+        <input type="text" name="name" id="name" placeholder="Enter name here">
+        <label for="species" ><h4>Species:</h4></label>
+        <input type="text" name="species" id="species" placeholder="Enter species here">
+        <select name="continent" id="continent">
+            <option value="Africa">Africa</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="N.America">N.America</option>
+            <option value="S.America">S.America</option>
+            <option value="Australia">Australia</option>
+            <option value="Antarctica">Antarctica</option>
+        </select>
+        <button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+
+    <h3>The list of added animals are:</h3>
+    <ul id="display-list"></ul>
     
 </body>
 </html>
