@@ -1,12 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const getform = document.querySelector('#new-form')
+    document.querySelector('#new-form').addEventListener('submit', getAnimalDetails)
 
     createDeleteButton();
-    let deleteButton= document.querySelector('#delete-button')
-    deleteButton.addEventListener('click', deleteAll)
-
-    getform.addEventListener('submit', getAnimalDetails)
+    document.querySelector('#delete-button').addEventListener('click', deleteAll)
     
+
+
 })
 
 getAnimalDetails = function (event){
