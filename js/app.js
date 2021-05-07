@@ -28,8 +28,8 @@ getAnimalDetails = function (event){
     newList.appendChild(continentList)
 
     displayAnimalDetails(newList);
-
-
+ // document.querySelector('#new-form').reset(); or can use this.reset(); as this here refer to the event object= form
+    this.reset();
 }
 
 displayAnimalDetails = function (newList){
